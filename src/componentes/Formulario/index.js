@@ -4,7 +4,7 @@ import Botao from '../Botao';
 import './formulario.css';
 import {useState} from 'react';
 
-const Formulario = () => {
+const Formulario = (props) => {
    const palcos = [
       '',
       'Metal',
@@ -20,7 +20,12 @@ const Formulario = () => {
 
    const aoSalvar = (e) => {
       e.preventDefault();
-      console.log("Form submetido", nome, cargo, imagem, palco)
+      props.cadastrarColaborador({
+         nome: nome,
+         cargo: cargo,
+         imagem: imagem,
+         palco: palco
+      });
    }
    
    return(
