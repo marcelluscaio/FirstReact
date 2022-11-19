@@ -1,0 +1,12 @@
+.palco{
+   text-align: center;
+   padding: 2rem 0;
+   background-color: #d9f7e9;
+}
+
+.palco__titulo{
+   font-size: 2rem;
+   border-bottom: .25rem solid #57c278;
+   display: inline-block;
+   padding-bottom: 0.5rem;
+}
