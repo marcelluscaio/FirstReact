@@ -35,7 +35,7 @@ function App() {
       <Formulario cadastrarColaborador= {colaborador => {
         setColaboradores([...colaboradores, colaborador]);
       }} />
-      {palcos.map(palco => <Palco key={palco.nome} nome={palco.nome}/>)}
+      {palcos.map(palco => <Palco key={palco.nome} nome={palco.nome} cor2={palco.cor2} cor1={palco.cor1}/>)}
       {/* <Palco nome={"Metal"} />
       <Palco nome={"Punk"} />
       <Palco nome={"Grunge"} /> */}
