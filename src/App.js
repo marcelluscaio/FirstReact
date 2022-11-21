@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Formulario cadastrarColaborador= {colaborador => {
+      <Formulario nomesPalcos={palcos.map(palco => palco.nome)} cadastrarColaborador= {colaborador => {
         setColaboradores([...colaboradores, colaborador]);
       }} />
       {palcos.map(palco => <Palco key={palco.nome} nome={palco.nome} cor2={palco.cor2} cor1={palco.cor1}/>)}

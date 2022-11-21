@@ -5,13 +5,7 @@ import './formulario.css';
 import {useState} from 'react';
 
 const Formulario = (props) => {
-   const palcos = [
-      '',
-      'Metal',
-      'Punk',
-      'Grunge',      
-      'Desistimos de classificar'
-   ];
+   
 
    const [nome, setNome] = useState('');
    const [cargo, setCargo] = useState('');
@@ -54,7 +48,7 @@ const Formulario = (props) => {
             />
             <ListaSuspensa 
                label="Palcos" 
-               itens={palcos} 
+               nomesPalcos={props.nomesPalcos} 
                obrigatorio={true}
                valor={palco}
                aoAlterado={valor => setPalco(valor)}
