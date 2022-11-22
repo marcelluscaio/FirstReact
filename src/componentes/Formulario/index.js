@@ -20,6 +20,10 @@ const Formulario = (props) => {
          imagem: imagem,
          palco: palco
       });
+      setNome('');
+      setCargo('');
+      setImagem('');
+      setPalco('');
    }
    
    return(
