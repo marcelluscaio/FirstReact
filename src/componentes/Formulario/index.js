@@ -46,7 +46,7 @@ const Formulario = (props) => {
                valor={imagem}
                aoAlterado= {valor => setImagem(valor)}   
             />
-            <ListaSuspensa 
+            <ListaSuspensa                
                label="Palcos" 
                nomesPalcos={props.nomesPalcos} 
                obrigatorio={true}

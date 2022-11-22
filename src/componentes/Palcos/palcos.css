@@ -9,3 +9,10 @@
    display: inline-block;
    padding-bottom: 0.5rem;
 }
+
+.palco__colaboradores{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 5%;
+   padding: 1rem 5vw 0;
+}

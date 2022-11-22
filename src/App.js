@@ -35,7 +35,13 @@ function App() {
       <Formulario nomesPalcos={palcos.map(palco => palco.nome)} cadastrarColaborador= {colaborador => {
         setColaboradores([...colaboradores, colaborador]);
       }} />
-      {palcos.map(palco => <Palco key={palco.nome} nome={palco.nome} cor2={palco.cor2} cor1={palco.cor1}/>)}
+      {palcos.map(palco => <Palco
+        key={palco.nome} 
+        nome={palco.nome} 
+        cor1={palco.cor1}
+        cor2={palco.cor2}
+        colaboradores={colaboradores.filter(colaborador => colaborador.palco === palco.nome)}
+      />)}
       {/* <Palco nome={"Metal"} />
       <Palco nome={"Punk"} />
       <Palco nome={"Grunge"} /> */}
