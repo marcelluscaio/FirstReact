@@ -29,6 +29,10 @@ function App() {
     },
   ];
 
+  const deletarColaborador = (nome) => {
+    setColaboradores(colaboradores.filter(colaborador => colaborador.nome != nome))
+  }
+
   return (
     <div className="App">
       <Banner />
@@ -41,6 +45,7 @@ function App() {
         cor1={palco.cor1}
         cor2={palco.cor2}
         colaboradores={colaboradores.filter(colaborador => colaborador.palco === palco.nome)}
+        aoDeletar={deletarColaborador}
       />)}
       {/* <Palco nome={"Metal"} />
       <Palco nome={"Punk"} />
